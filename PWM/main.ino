@@ -25,8 +25,8 @@ void init_timer(){
   volatile char *TCCR1_A = (char*)0x80;
   volatile char *TCCR1_B = (char*)0x81;
   volatile short *TCNT_1 = (short*)0x84;
-  *TCCR1_A = 0b10100001;
-  *TCCR1_B = 0b00001001;
+  *TCCR1_A = 0xA1;
+  *TCCR1_B = 0x09;
   *TCNT_1  = 0;
   // *TIMSK_1 = 0x01;
 }
