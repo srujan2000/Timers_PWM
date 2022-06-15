@@ -28,7 +28,6 @@ void init_timer(){
   *TCCR1_A = 0xA1;
   *TCCR1_B = 0x09;
   *TCNT_1  = 0;
-  // *TIMSK_1 = 0x01;
 }
 
 void delay1(){
